@@ -1,0 +1,24 @@
+
+.item{
+  width: 100%;border-bottom: 1px solid #eee;padding: 0rpx 30rpx;
+  box-sizing: border-box;height: 100rpx;
+}
+.itemNoBorder{
+  width: 100%;padding: 0rpx 30rpx;
+  box-sizing: border-box;height: 100rpx;
+}
+.itemTip{
+  line-height: 100rpx;margin-right: 20rpx;
+}
+.item switch{
+  margin-left: 30rpx;margin-right: 30rpx;line-height: 100rpx;
+}
+.item input{
+  width: 78%;height: 100%;float: right
+}
+textarea{
+  border: 1px #888 solid;width: 85%;padding: 10rpx;margin-left: 35rpx;margin-right: 35rpx;
+}
+button{
+  background-color: #03a9f4;color: #fff;margin: 35rpx;
+}

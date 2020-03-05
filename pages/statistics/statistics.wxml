@@ -1,0 +1,16 @@
+<view class="container">
+    <ec-canvas id="histogram" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="container">
+  <ec-canvas id="pie" canvas-id="mychart-bar" ec="{{ ecPie }}"></ec-canvas>
+</view>
+
+
+
+<!-- <view class="tr">
+  <text class="td">月份</text>
+  <text class="td">收入</text>
+  <text class="td">支出</text>
+</view>
+<view wx:for="{{}}">
+</view> -->

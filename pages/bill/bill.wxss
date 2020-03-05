@@ -1,0 +1,46 @@
+
+.title{
+  width: 100%;padding-top: 10rpx;padding-bottom: 10rpx;
+}
+.title #choseBookBtn{
+  width: 46%;margin-left: 2%;display: inline-block
+}
+.title #searchBtn{
+  width: 46%;margin-left: 4%;display: inline-block
+}
+.item{
+  width: 100%;height: auto;background: #fff;padding: 10rpx 30rpx;
+  display:flex;align-items:center;border-bottom: 1px solid #eee;
+  box-sizing: border-box
+}
+.item view{
+  width: 67%;display:inline-block;
+}
+.item .content{
+  display: block;font-size: 35rpx;
+}
+.item .time{
+  color: #888;font-size: 25rpx;
+}
+.item .spend{
+  display:inline-block;width:30%;text-align: right;color: #F56C6C;font-size: 40rpx;
+}
+.item .income{
+  display:inline-block;width:30%;text-align: right;color: #67C23A;font-size: 40rpx;
+}
+
+.loading {
+  padding: 10rpx;
+  color: #ddd;
+  text-align: center;
+}
+
+.addBtn{
+  width: 80rpx;height: 80rpx;border-radius: 50%;background: #03a9f4;
+  position: fixed;bottom: 20rpx;right: 20rpx;line-height: 80rpx;color: #fff;font-size: 40rpx;text-align: center;
+}
+
+
+.hover {
+  background:  #409EFF;
+}

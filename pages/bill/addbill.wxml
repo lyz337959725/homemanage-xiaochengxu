@@ -1,0 +1,38 @@
+<!--pages/bill/addbill.wxml-->
+  <view class="item">
+    <text class="itemTip">支出</text>
+    <switch color="#03a9f4" checked="{{income == 'true'}}" bindchange="switch1Change" />
+    <text class="itemTip">收入</text>
+  </view>
+
+  <view class="item">
+    <picker mode="multiSelector" range='{{typeSelector}}' range-key='name' bindchange='changeType' bindcolumnchange='changeTypeColumn'>
+      <text class="itemTip">分类：</text>
+      <text>{{typeTip}}</text>
+    </picker>
+  </view>
+
+  <view class="item">
+    <text class="itemTip">金额：</text>
+    <input value="{{spend}}" class="" bindinput="spendChange" type="digit" placeholder="请输入金额" />
+  </view>
+
+  <view class="item">
+    <picker mode="date" value="{{date}}" bindchange="changeDate">
+      <text class="itemTip">消费日期： {{spendDate}}</text>
+    </picker>
+  </view>
+
+  <view class="item">
+    <picker bindchange="changePerson" value="{{book}}" range="{{personList}}" range-key="{{'name'}}">
+      <text class="itemTip">所属人：</text>
+      <text>{{personTip}}</text>
+    </picker>
+  </view>
+
+  <view class="itemNoBorder">
+    <text class="itemTip">用途描述：</text>
+  </view>
+  <textarea rows="5" bindblur="contentChange"	value="{{content}}" />
+
+  <button bindtap="submit">提交</button>

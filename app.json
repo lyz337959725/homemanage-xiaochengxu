@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/bill/bill",
+    "pages/bill/addbill",
+    "pages/statistics/statistics"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "财务中心",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#03a9f4",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/bill/bill",
+        "text": "流水",
+        "iconPath": "/images/bill.png",
+        "selectedIconPath": "/images/bill_select.png"
+      },
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计",
+        "iconPath": "/images/statistics.png",
+        "selectedIconPath": "/images/statistics_select.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

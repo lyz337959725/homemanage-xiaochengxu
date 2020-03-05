@@ -1,0 +1,19 @@
+<view class="title">
+  <picker id="choseBookBtn" bindchange="handleBookChange" range="{{books}}" range-key="{{'name'}}">
+    <button size="default"> 选择账簿 </button>
+  </picker>
+  <button id="searchBtn"> 条件筛选 </button>
+</view>
+<!-- <scroll-view scroll-y="true" bindscrolltolower=""> -->
+  <view class="item" wx:for="{{bills}}">
+    <view>
+      <text class="content">{{item.content}}</text>
+      <text class="time">{{item.spendDate}}</text>
+    </view>
+    <text class="income" wx:if="{{item.income}}">+ {{item.spend}}</text>
+    <text class="spend" wx:else>- {{item.spend}}</text>
+  </view>
+<!-- </scroll-view> -->
+<view class="loading" hidden="{{loadingState}}">正在载入更多...</view>
+<view class="loading"  hidden="{{allLoadState}}">已全部加载完成</view>
+<button class="addBtn" hover-class="hover" bindtap="addBill">+</button>
